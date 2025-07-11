@@ -17,5 +17,3 @@ job = Job(glueContext)
 
 path = "s3://premier-league-data-sample/premier-league-leaderboard/20060206.csv"
 df = spark.read.format("csv").option("header", "true").load(path)
-
-df.show(1)
